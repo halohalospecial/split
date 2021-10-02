@@ -1,0 +1,14 @@
+!.gitignore
+bin
+.import
+*.import
+assets/audio/Accept.wav
+assets/audio/bleeping-demo-by-kevin-macleod-from-filmmusic-io.*
+assets/audio/Laser Shot.wav
+assets/audio/Laser Shot-reversed.wav
+assets/audio/neon-laser-horizon-by-kevin-macleod-from-filmmusic-io.*
+assets/audio/Single-Barefoot-Footstep-C-www.fesliyanstudios.com.wav
+assets/audio/spell2.wav
+assets/font.font
+assets/inca_back2.png
+assets/inca_front.png

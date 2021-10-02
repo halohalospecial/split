@@ -1,0 +1,12 @@
+[gd_resource type="Environment" format=2]
+
+[resource]
+background_mode = 4
+glow_enabled = true
+glow_levels/3 = false
+glow_levels/4 = true
+glow_levels/5 = false
+glow_bloom = 0.03
+glow_blend_mode = 0
+glow_hdr_threshold = 0.9
+glow_hdr_scale = 1.0

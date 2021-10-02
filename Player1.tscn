@@ -1,0 +1,98 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://PlayerSprite2.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player1.gd" type="Script" id=2]
+[ext_resource path="res://PlayerLight.tscn" type="PackedScene" id=3]
+[ext_resource path="res://PlayerSplitParticles.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/player/eyes.png" type="Texture" id=6]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 11.2748
+height = 5.69841
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 11.9329, 12.4284 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 6.00158, 2.45258 )
+
+[sub_resource type="OccluderPolygon2D" id=4]
+polygon = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+
+[sub_resource type="ShaderMaterial" id=5]
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "blank",
+"speed": 5.0
+} ]
+
+[node name="Player1" type="KinematicBody2D"]
+z_index = 1
+collision_layer = 2147483649
+collision_mask = 2147483649
+script = ExtResource( 2 )
+
+[node name="FloorRayCast" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 0, 25 )
+
+[node name="CameraTween" type="Tween" parent="."]
+
+[node name="PassTween" type="Tween" parent="."]
+
+[node name="SaltCollider" type="StaticBody2D" parent="."]
+collision_layer = 32
+collision_mask = 32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SaltCollider"]
+position = Vector2( 0, -0.00451779 )
+rotation = 1.56533
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -0.00451779 )
+rotation = 1.56533
+shape = SubResource( 1 )
+
+[node name="HeadArea1" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HeadArea1"]
+position = Vector2( 0, -6.806 )
+rotation = 1.56533
+shape = SubResource( 2 )
+
+[node name="ConnectArea1" type="Area2D" parent="."]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ConnectArea1"]
+position = Vector2( 0, 13.281 )
+shape = SubResource( 3 )
+
+[node name="PlayerLight" parent="." instance=ExtResource( 3 )]
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource( 4 )
+
+[node name="AnimatedSprite" parent="." instance=ExtResource( 1 )]
+material = SubResource( 5 )
+animation = "idle"
+frame = 6
+
+[node name="Eyes" type="AnimatedSprite" parent="."]
+position = Vector2( -3.367, -0.561 )
+frames = SubResource( 6 )
+animation = "idle"
+
+[node name="PlayerSplitParticles" parent="." instance=ExtResource( 4 )]
+
+[connection signal="area_entered" from="ConnectArea1" to="." method="_on_ConnectArea_area_entered"]

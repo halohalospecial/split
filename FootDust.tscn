@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Dust.gd" type="Script" id=1]
+[ext_resource path="res://assets/spot.png" type="Texture" id=2]
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 0.752941, 0.752941, 0.752941, 1, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+lifetime_randomness = 1.0
+emission_shape = 2
+emission_box_extents = Vector3( 10, 0, 0 )
+flag_disable_z = true
+gravity = Vector3( 0, -196, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+damping = 100.0
+damping_random = 1.0
+scale = 0.04
+scale_random = 0.05
+color_ramp = SubResource( 2 )
+
+[node name="Dust" type="Particles2D"]
+modulate = Color( 1, 1, 1, 0.752941 )
+light_mask = 0
+amount = 16
+lifetime = 0.5
+explosiveness = 0.5
+local_coords = false
+process_material = SubResource( 3 )
+texture = ExtResource( 2 )
+script = ExtResource( 1 )

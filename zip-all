@@ -1,0 +1,6 @@
+rm bin/split-html.zip
+rm bin/split-windows.zip
+rm bin/split-linux.zip
+zip -r bin/split-html.zip bin/split-html
+zip -r bin/split-windows.zip bin/split.exe
+zip -r bin/split-linux.zip bin/split.x86_64

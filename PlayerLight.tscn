@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/spot.png" type="Texture" id=1]
+
+[node name="Light2D" type="Light2D"]
+visible = false
+show_behind_parent = true
+scale = Vector2( 5, 5 )
+texture = ExtResource( 1 )
+texture_scale = 1.5
+energy = 1.2
+shadow_enabled = true
+shadow_filter = 5
+shadow_filter_smooth = 10.0
+__meta__ = {
+"_edit_lock_": true
+}
