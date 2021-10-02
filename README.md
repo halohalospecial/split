@@ -1,15 +1,16 @@
 # - Split -
 
-![image](https://img.itch.zone/aW1nLzU0NTc2OTYucG5n/315x250%23c/ymuKy%2F.png)
+Split screen manananggal puzzle game made for Global Game Jam 2021
 
 https://ubehalaya.itch.io/split
 
-Maya is a manananggal whose upper half likes to fly to exciting adventures at night. But her lower half does not want to stay in place and wanders on its own! The two halves got lost and must find each other to reunite before sunrise. The game is played in horizontal split screen mode where each half is followed by a camera. The spacebar can be pressed to merge the 2 splits into 1 frozen view, making it possible for either half to go to the other side. Pressing the spacebar again resplits the view. The goal is to find a way to reunite the two halves. The two halves won't be able to reunite if there's salt on the lower half. Can be played with 1 or 2 players.
+![image](https://img.itch.zone/aW1nLzU0NTc2OTYucG5n/315x250%23c/ymuKy%2F.png)
 
-\- This is an improved version of the game made for Global Game Jam 2021 (Theme: Lost and Found, Diversifier: Duetto)
+Maya is a manananggal whose upper half likes to fly to exciting adventures at night. But her lower half does not want to stay in place and wanders on its own! The two halves got lost and must find each other to reunite before sunrise. The game is played in horizontal split screen mode where each half is followed by a camera. The spacebar can be pressed to merge the 2 splits into 1 frozen view, making it possible for either half to go to the other side. Pressing the spacebar again resplits the view. The goal is to find a way to reunite the two halves. The two halves won't be able to reunite if there's salt on the lower half. Can be played with 1 or 2 players.
 
 ### Notes
 
+- This is an improved version of the game made for Global Game Jam 2021 (Theme: Lost and Found, Diversifier: Duetto)
 - Some assets are not included in this repository. They should be downloaded from their sources. See [MissingAssets.md](MissingAssets.md).
 
 ### Credits
