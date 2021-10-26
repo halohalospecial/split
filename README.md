@@ -1,6 +1,6 @@
 # - Split -
 
-Split screen manananggal puzzle game made for Global Game Jam 2021
+Split screen manananggal puzzle game originally made for Global Game Jam 2021
 
 https://ubehalaya.itch.io/split
 
