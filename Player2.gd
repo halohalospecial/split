@@ -18,7 +18,7 @@ export (int) var max_speed = 200
 export (int) var jump_speed = 380
 export (int) var gravity = 980
 export (float, 0, 1.0) var friction = 0.2
-export (float) var acceleration = 15
+export (float) var acceleration = 15.0
 export (int, 0, 200) var push_strength = 100
 export (bool) var has_footstep_sound = true
 

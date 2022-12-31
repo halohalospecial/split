@@ -6,7 +6,7 @@ export (bool) var is_bobbing = true
 export (bool) var has_trails = false
 export(float) var move_speed = 250.0
 export (int) var max_speed = 200
-export (float) var acceleration = 15
+export (float) var acceleration = 15.0
 export (float, 0, 1.0) var friction = 0.1
 export (int, 0, 200) var push_strength = 100
 

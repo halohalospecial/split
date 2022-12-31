@@ -21,6 +21,9 @@ func _ready():
 	noise.octaves = 2
 
 func _physics_process(delta):
+	if not smoothing_enabled:
+		smoothing_enabled = true
+
 	if target:
 		position = target.position
 
